@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import com.coderbytrade.model.Customer;
 import com.coderbytrade.repository.CustomerRepository;
 
+import org.springframework.stereotype.Repository;
+
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
     @Override
