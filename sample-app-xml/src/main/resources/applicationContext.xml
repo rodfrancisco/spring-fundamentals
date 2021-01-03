@@ -7,6 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:annotation-config />
+    <context:property-placeholder location="application.properties" />
+
     <bean name="customerRepository" class="com.coderbytrade.repository.HibernateCustomerRepositoryImpl" />
     
     <bean name="customerService" 
